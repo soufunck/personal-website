@@ -1,7 +1,8 @@
 // efeito de scroll na pagina
 window.sr = ScrollReveal({ reset: true, duration: 2000, distance: '100px'});
 
-sr.reveal(`.c`, {origin: 'right',interval:300});
+// Classe conteudo (linha 52 de galeria.html)
+sr.reveal(`.conteudo`, {origin: 'right',interval:300});
 
 // filtro de categoria 
 filtro("todas")
