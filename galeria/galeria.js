@@ -1,6 +1,3 @@
-// efeito de scroll na pagina
-window.sr = ScrollReveal({ reset: true, duration: 2000, distance: '100px'});
-
 // Classe conteudo (linha 52 de galeria.html)
 sr.reveal(`.conteudo`, {origin: 'right',interval:300});
 
