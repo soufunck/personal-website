@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<head>
+
+  <!-- meta -->
+    <meta name="description" content="Website do programador e designer João Pedro Funck Alves">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- estilos -->
+  <link rel="stylesheet" href="galeria.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- icone -->
+  <link rel="icon" type="image/png" sizes="192x192"
+    href="https://uploaddeimagens.com.br/images/003/373/117/full/funckjotape-redondo.png?1628532455">
+
+  <!-- fontes -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+  <!-- imports js -->
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  <!-- titulo -->
+  <title>Jotape - Galeria</title>
+
+</head>
+
+<body>
+
+  <!-- MAIN (Center website) -->
+<div class="main">
+
+  <a href="/index.html" style="color:rgb(93, 177, 255); text-transform: uppercase; font-weight: bold;"><i class="fa fa-coffee"></i> Jotape</a>
+  <hr>
+  
+  <!-- botoes categoria -->
+  <div id="container-botao">
+    <button class="botao active" onclick="filtro('todas')"> Todas</button>
+    <button class="botao" onclick="filtro('comercio')"> Comércio</button>
+    <button class="botao" onclick="filtro('avatar')"> Avatar</button>
+    <button class="botao" onclick="filtro('thumb')"> Thumbnail</button>
+  </div>
+  
+  <!-- grid de imagens -->
+  <div class="fila">
+    <div class="c comercio">
+      <div class="conteudo">
+        <img src="https://i.ibb.co/Nx59Nyx/anuncio-de-hamburguer.png" alt="hamburguer" style="width:100%;transition: .5s;">
+        <h4 style="color:rgb(255, 81, 0)">Hambúrguer</h4>
+        <p style="color:rgb(131, 131, 131)">Template de anúncio para uma hamburgueria</p>
+      
+      </div>
+    </div>
+    <div class="c comercio">
+      <div class="conteudo">
+      <img src="https://i.ibb.co/D4cNxFS/anuncio-budweiser.png" alt="cerveja" style="width:100%;transition: .5s;">
+        <h4 style="color:rgb(255, 129, 71)">Cerveja</h4>
+        <p style="color:rgb(131, 131, 131)">Template de anúncio para uma cerveja</p>
+      </div>
+    </div>
+    <div class="c comercio">
+      <div class="conteudo">
+        
+      <img src="https://i.ibb.co/hWxYvbP/maicon.png" alt="gremio" style="width:100%;transition: .5s;">
+        <h4 style="color:#0D80BF">Maicon - Jogador do Grêmio</h4>
+        <p style="color:rgb(131, 131, 131)">Template de um flyer do jogador Maicon - Grêmio</p>
+        
+      </div>
+    </div>
+    
+    <div class="c avatar">
+      <div class="conteudo">
+      
+        <img src="https://i.ibb.co/XyZmv2P/muie-neon2.png" alt="avatar" style="width:100%;transition: .5s;">
+        <h4 style="color:rgb(0, 255, 255)">Efeito Neon</h4>
+        <p style="color:rgb(131, 131, 131)">Uma simples edição na foto de uma mulher para utilizar como perfil</p>
+       
+      </div>
+    </div>
+    <div class="c avatar">
+      <div class="conteudo">
+        
+      <img src="https://i.ibb.co/gDjFWhy/matthew-drawings.png" alt="avatar" style="width:100%;transition: .5s;">
+        <h4 style="color:rgb(255, 0, 0)">Cartoon</h4>
+        <p style="color:rgb(131, 131, 131)">Uma arte em cartoon para utilizar em perfil</p>
+        
+      </div>
+    </div>
+    <div class="c avatar">
+      <div class="conteudo">
+        
+      <img src="https://i.ibb.co/myMkWpR/8c14ca7b-523f-4309-a37e-023eeb075a9a.jpg" alt="avatar" style="width:100%;transition: .5s;">
+        <h4 style="color:rgb(255, 252, 80)">Efeito Neon - Ouro</h4>
+        <p style="color:rgb(131, 131, 131)">Edição de uma foto da heroína Mulher Maravilha</p>
+        
+      </div>
+    </div>
+  
+    <div class="c thumb">
+      <div class="conteudo">
+        
+        <img src="https://i.ibb.co/C9SNNzp/thumbnail-impressionado.png" alt="thumb" style="width:100%;transition: .5s;">
+        <h4 style="color:rgb(255, 49, 49)">Thumbnail - Impressionado!</h4>
+        <p style="color:rgb(131, 131, 131)">Uma thumbnail com o homem impressionado</p>
+        
+      </div>
+    </div>
+    <div class="c thumb">
+      <div class="conteudo">
+        
+      <img src="https://i.ibb.co/gdFcbtJ/thumbnail-muie.png" alt="thumb" style="width:100%;transition: .5s;">
+        <h4 style="color:rgb(255, 38, 85)">Thumbnail Pincelada</h4>
+        <p style="color:rgb(131, 131, 131)">Uma thumbnail de uma mulher com título</p>
+        
+      </div>
+    </div>
+    <div class="c thumb">
+      <div class="conteudo">
+        
+      <img src="https://i.ibb.co/sHsKWNR/thumbnail-ondulada.png" alt="thumb" style="width:100%;transition: .5s;">
+        <h4 style="color:rgb(134, 134, 134)">Thumbnail Ondulada</h4>
+        <p style="color:rgb(131, 131, 131)">Uma thumbnail de uma mulher com título ondulado</p>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--Javascript-->
+  <script src="galeria.js"></script>
+
+</body>
+
+</html>
