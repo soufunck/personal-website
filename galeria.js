@@ -1,6 +1,3 @@
-// Classe conteudo (linha 52 de galeria.html)
-sr.reveal(`.conteudo`, {origin: 'right',interval:300});
-
 // filtro de categoria 
 filtro("todas")
 function filtro(c) {
