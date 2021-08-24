@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181818;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+  
+.main a {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.fila {
+  margin: 10px -16px;
+}
+
+.fila, .fila > .c {
+  padding: 8px;
+}
+
+.c {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+.fila:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.conteudo {
+  transition: transform .2s; /* Animation */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.288);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.botao {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  color: rgb(93, 177, 255);
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.botao:hover {
+  background-color: white;
+  color: rgb(93, 177, 255);
+}
+
+.botao.active {
+  background-color: white;
+  color: rgb(93, 177, 255);
+}
+
+
+.conteudo img:hover {
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2); 
+  transform: scale(2); 
+}
